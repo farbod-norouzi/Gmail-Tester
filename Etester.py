@@ -1,9 +1,10 @@
+from os import system
+
 # Check the requirements
+
 try:
     import smtplib
     from colorama import Fore
-    import os
-    from os import system
 except ImportError:
     system("pip install os ")
     system("pip install smtplib ")
