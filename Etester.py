@@ -1,7 +1,6 @@
 # Check the requirements
 try:
     import smtplib
-    import colorama 
     from colorama import Fore
     import os
     from os import system
