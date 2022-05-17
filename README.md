@@ -1,6 +1,9 @@
 # Gmail-Tester
 Check Gmail addresses in the shortest time using the powerful Python!
 
+# Attention
+* Note that be sure to install libraries from the "Required plugins" section so that you do not have any problems running the program! *
+
 # Plugins required
 - pip install python
 - pip install os
