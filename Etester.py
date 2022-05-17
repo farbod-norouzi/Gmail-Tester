@@ -1,17 +1,19 @@
+import os
 from os import system
-
-# Check the requirements
-
-try:
-    import smtplib
-    from colorama import Fore
-except ImportError:
-    system("pip install os ")
-    system("pip install smtplib ")
-    system("pip install colorama ")
+import smtplib
+import colorama 
+from colorama import Fore
+import platform 
 
 # Start APP
-os.system("cls")
+def clear():
+   result = platform.uname()[0]
+   if result == "Windows":
+      system("cls")
+   elif result == "Linux":
+      system("clear")
+clear()
+
 print(Fore.RED+"""
  ___ __ __  __  _ _      ____  _ ___ ____  _____ ___  
 | __|  V  |/  \| | |    / _/ || | __/ _/ |/ / __| _ \ 
